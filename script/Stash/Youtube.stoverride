@@ -1,0 +1,37 @@
+name: 'YouTube 去广告'
+desc: '支持pip，后台播放'
+icon: 'https://raw.githubusercontent.com/oliver556/clash-rules/refs/heads/main/icon/App_icon/120px/YouTube.png'
+category: '去广告'
+date: '2026-07-06'
+version: '0.0.1'
+
+http:
+  mitm:
+    - www.youtube.com
+    - s.youtube.com
+    - m.youtube.com
+    - tv.youtube.com
+    - music.youtube.com
+    - youtubei.googleapis.com
+    - "-redirector*.googlevideo.com"
+    - "*.googlevideo.com"
+
+  script:
+    - match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch)
+      name: YouTubequguanggao1
+      type: response
+      require-body: true
+      binary-mode: true
+      timeout: 10
+
+  rewrite:
+    - (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
+    - ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-200
+    - ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
+    - ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
+    - ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
+
+script-providers:
+  YouTubequguanggao1:
+    url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
+    interval: 86400
