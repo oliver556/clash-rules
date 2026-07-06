@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-06T10:45:43.990Z",
+  "repo": {
+    "owner": "oliver556",
+    "name": "clash-rules",
+    "branch": "main"
+  },
+  "rawBase": "https://raw.githubusercontent.com/oliver556/clash-rules/main",
+  "items": [
+    {
+      "id": "rules/Clash/Cainiao/Cainiao.list",
+      "kind": "ruleset",
+      "client": "Clash",
+      "app": "Cainiao",
+      "format": "list",
+      "path": "rules/Clash/Cainiao/Cainiao.list",
+      "rawUrl": "https://raw.githubusercontent.com/oliver556/clash-rules/main/rules/Clash/Cainiao/Cainiao.list",
+      "name": "Cainiao 菜鸟",
+      "description": "",
+      "category": "分流",
+      "updated": "2026-07-06"
+    },
+    {
+      "id": "rules/Clash/ChinaTelecom/ChinaTelecom.list",
+      "kind": "ruleset",
+      "client": "Clash",
+      "app": "ChinaTelecom",
+      "format": "list",
+      "path": "rules/Clash/ChinaTelecom/ChinaTelecom.list",
+      "rawUrl": "https://raw.githubusercontent.com/oliver556/clash-rules/main/rules/Clash/ChinaTelecom/ChinaTelecom.list",
+      "name": "ChinaTelecom 中国电信",
+      "description": "",
+      "category": "分流",
+      "updated": "2026-07-06"
+    },
+    {
+      "id": "rules/Clash/PrivateIP/PrivateIP.list",
+      "kind": "ruleset",
+      "client": "Clash",
+      "app": "PrivateIP",
+      "format": "list",
+      "path": "rules/Clash/PrivateIP/PrivateIP.list",
+      "rawUrl": "https://raw.githubusercontent.com/oliver556/clash-rules/main/rules/Clash/PrivateIP/PrivateIP.list",
+      "name": "PrivateIP - 私有 IP",
+      "description": "",
+      "category": "分流",
+      "updated": "2026-07-06"
+    },
+    {
+      "id": "rules/Clash/Zhihu/Zhihu.list",
+      "kind": "ruleset",
+      "client": "Clash",
+      "app": "Zhihu",
+      "format": "list",
+      "path": "rules/Clash/Zhihu/Zhihu.list",
+      "rawUrl": "https://raw.githubusercontent.com/oliver556/clash-rules/main/rules/Clash/Zhihu/Zhihu.list",
+      "name": "Zhihu 知乎",
+      "description": "",
+      "category": "分流",
+      "updated": "2026-07-06"
+    },
+    {
+      "id": "script/Stash/Cainiao/remove_ads.stoverride",
+      "kind": "override",
+      "client": "Stash",
+      "app": "Cainiao",
+      "format": "stoverride",
+      "path": "script/Stash/Cainiao/remove_ads.stoverride",
+      "rawUrl": "https://raw.githubusercontent.com/oliver556/clash-rules/main/script/Stash/Cainiao/remove_ads.stoverride",
+      "name": "菜鸟去广告",
+      "description": "过滤菜鸟广告",
+      "category": "去广告",
+      "updated": "2026-07-06"
+    },
+    {
+      "id": "script/Stash/Youtube/remove_ads.stoverride",
+      "kind": "override",
+      "client": "Stash",
+      "app": "Youtube",
+      "format": "stoverride",
+      "path": "script/Stash/Youtube/remove_ads.stoverride",
+      "rawUrl": "https://raw.githubusercontent.com/oliver556/clash-rules/main/script/Stash/Youtube/remove_ads.stoverride",
+      "name": "YouTube 去广告",
+      "description": "支持pip，后台播放",
+      "category": "去广告",
+      "updated": "2026-07-06"
+    },
+    {
+      "id": "script/Stash/Zhihu/remove_ads.stoverride",
+      "kind": "override",
+      "client": "Stash",
+      "app": "Zhihu",
+      "format": "stoverride",
+      "path": "script/Stash/Zhihu/remove_ads.stoverride",
+      "rawUrl": "https://raw.githubusercontent.com/oliver556/clash-rules/main/script/Stash/Zhihu/remove_ads.stoverride",
+      "name": "知乎去广告",
+      "description": "去除各部广告，建议卸载知乎重新安装。",
+      "category": "去广告",
+      "updated": "2026-07-06"
+    }
+  ]
+}

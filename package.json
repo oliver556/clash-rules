@@ -1,0 +1,8 @@
+{
+  "name": "clash-rules",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:manifest": "node scripts/generate-manifest.mjs"
+  }
+}
