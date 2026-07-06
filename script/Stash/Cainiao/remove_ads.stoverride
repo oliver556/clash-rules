@@ -6,7 +6,7 @@ date: '2026-07-06'
 version: '0.0.1'
 
 rules:
-  # @include-rule rule/Clash/CainiaoAds/Cainiao.list
+  # @include-rule rule/Clash/Cainiao/Cainiao.list
 
 http:
   mitm:
