@@ -52,3 +52,11 @@ http:
       name: 移除首页推广_42
       type: response
       require-body: true
+
+script-providers:
+  移除阿里巴巴通用广告请求_40:
+    url: https://raw.githubusercontent.com/aliviplee/vpn_tool/refs/heads/master/Resource/Script/Alibaba/Alibaba_amdc_reject.js
+    interval: 86400
+  移除首页推广_42:
+    url: https://raw.githubusercontent.com/aliviplee/vpn_tool/refs/heads/master/Resource/Script/Cainiao/Cainiao_remove_ads.js
+    interval: 86400
